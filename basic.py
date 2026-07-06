@@ -77,7 +77,7 @@ print("marks is:",marks)
 print("value is:",value)
 print()
 '''
-#q1 write tp input 2 numbers & print their sum
+#q1 write aprogram input 2 numbers & print their sum
 a=int(input("enter your first number"))
 b=int(input("enter your second number"))
 print("sum is:",a+b)
