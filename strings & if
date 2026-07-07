@@ -52,6 +52,7 @@ print(h1.count("$"))
 '''
 
 #conditional statements
+'''
 print("conditional statement")
 light="pink"
 if(light == "red"): #if is one time check
@@ -62,10 +63,44 @@ elif(light == "yello"):
     print("on")
 else:# All condition is False else is must used or elif is True will else is not working
     print("Light is broken")
-
 print()
-num = 5
-if(num > 2):
-    print("greater than 2")
-elif(num > 3):
-    print("greater than 3")
+
+num = 1
+if(num >= 1):
+    print("can be original")#indentation is must in python if not indentation it will give error
+else:
+    print("not be original")
+print()
+
+#marks calculation predicted by grade
+marks = int(input("enter your marks:"))
+if(marks >= 90):
+    grade = "A"
+elif(marks >= 80 and marks < 90):
+    grade = "B"
+elif(marks >= 70 and marks < 80):
+    grade = "C"
+else:
+    grade = "D"
+print("grade of the student is: -->",grade)
+print()
+
+#nesting first checking 1st if and next chck 2nd if both condition apply 
+print("nesting")
+age = int(input("enter your current age:")) 
+if(age >= 18):
+    if(age >= 80):
+        print("cannot drive") # checked on 80>
+    else:
+        print("can drive") # else proved on 1st if checked on 18>
+else:
+    print("cannot drive") # checked on <18
+'''
+#q1 write a python check if a number entered by the user is odd or even.
+numb = int(input("enter the number:"))
+
+rem = numb % 2 #reminder is 2
+if(rem == 0): # 2 is == 0 is even othervise odd
+    print("even")
+else:
+    print("odd")
