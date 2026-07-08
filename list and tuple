@@ -1,0 +1,83 @@
+
+'''
+#list []
+print('list')
+marks=[98.6,67.8,67.5,45.5]
+print(marks)
+print(type(marks))
+print(marks[1]) #index
+print(len(marks))
+
+student = ["karan",81.3,35,"Delhi"]
+print(student)
+student[0] = "arjun"# list also changed the value with feature
+print(student)
+print()
+#list slicing
+print("List slicing")
+marks1 = [34,54,56,76]
+print(marks1[1:])
+print(marks1[-3:-1]) #negative slicing
+print()
+
+#List method
+print("List methods")
+list = [2,1,3]
+print("this is list:",list)
+list.append(4) #append it is used to join to end of the list
+print("Added last no:",list)
+list.sort() #queue the element in assendig order = 01234 dissanding order = 4321
+print("sorted in assending:",list) # you only aply the list and print list not apply dirct ex print(list.sort())
+list.sort(reverse=True) #this is dissanding order
+print("sorted in disseanding:",list)
+list.reverse() #this is reversed list
+print("reversed list is:",list)
+list.insert(1,10) #insert used to index value replace
+print("insert the value in 1 index:",list)
+list.pop(3) # index eliment is removed
+print("removed that perticular eliment",list)
+
+
+# Tuples "()"-->parantheses=(a built-in datatype that lets us create immutable sequences of values)
+print("tuples") # tup()
+tup = (1,2,3,4)
+print(tup[0])
+print(type(tup))
+print()
+
+#tuple method
+tuple = (1,2,4,4)
+print("index no is:",tuple.index(2)) # this index method is 2 tuple have 1 index
+print("count the no of tuple replaced:",tuple.count(4)) #count method
+
+
+#q1 write a python the user to enter names of thier 3 favrite movies & store them in a list
+movies = []
+movies.append(input("enter first movie:"))
+movies.append(input("enter second movie:"))
+movies.append(input("enter third movie:"))
+print(movies)
+
+#q2 write a python if a list contains a palindrome of elements(Hint:use copy() method)
+print("palindrome")
+list1 = [1,2,1] #same as bigining and reverse
+list2 = [1,2,3]
+copy_list1 = list1.copy()
+copy_list1.reverse()
+print(copy_list1)
+
+if(copy_list1 == list1):
+   print("palindrome")
+else:
+   print("not palindrome")
+'''
+# q3 write a python to count number of students with the "A" grade in the following tuple.
+#("c","d","a","a","b","b","a")
+grade=("C","D","A","A","B","B","A")
+print("a is have in tuple is:",grade.count("A"))
+
+# store the above value in a list & sort them from "A" to "B"
+grade_list = list(grade)
+grade_list.sort()
+print("sorted List is:",grade_list)
+print(type(grade_list))
