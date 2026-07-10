@@ -1,0 +1,108 @@
+# dictionary should store multiple values and data types with single variable
+'''
+info = {
+    "name" : "shradha",
+    "subjects" : ["python","c",'java'],
+    "topics" : ("dict","set"),
+    "cgpa" : 9.25,
+    "marks" : [98,97,96],
+    "is adult" : True
+}
+info["name"] = 23
+print(info["name"])
+print(info["cgpa"])
+print(info)
+
+null_dict = {}
+null_dict["name"]="suman"
+print(null_dict)
+
+#nested dictionary
+print("nested dictionary")
+student = {
+    "name" : "rahul kumar",
+    "subjects" : {
+        "phy" : 97,
+        "chem" : 98,
+        "math" : 99
+    }
+}
+print(student["subjects"]["phy"])
+
+#distionary methods
+print("length of the student:",len(student))
+print("keys of the student:",student.keys())#1
+print("keys of student in list:",list(student.keys())) 
+print("student values:",student.values())#2
+print("student values in list:",list(student.values()))
+print("student items in tuple:",student.items())#3
+print("student items in tuple with list:",list(student.items()))
+pairs = list(student.items()) #3
+print(pairs[1]) #used slicing
+print(student)
+#print(student["name"])
+print("get values:",student.get("name"))#4 find and print perticular variable
+print("get duplicate",student.get('name2'))#find or print duplicate is none 
+phone = {"phone no" : 6360204565}
+student.update(phone)#5 new updated dictionary
+print(student)
+
+#set [ set is the collection of the unordered items each element in the list is unique and immutable]
+print("SET")#set is mutable and eliment is immutable
+a=set()#this is empty set
+print(a)
+collections = {1,2,2,2,3,4,"hello","word","word"}#set is only orginal values include and duplicates are not allow
+print(collections)
+print(len(collections))
+print(type(collections))
+print()
+
+#set methods
+collections.add(4)#1
+collections.add("sumantha")
+print("added on 3 and string and list",collections)
+collections.remove(2)#2
+print("removed 2:",collections)
+#collections.clear() #3
+#rint(len(collections))
+collections.pop()#4 randamly delete one value
+print(collections)
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+print(set1.union(set2))#5 {1,2,3,4 duplicate delete and union is combines two variable}
+print(set1.intersection(set2)) # it shows repeated and duplicate values
+
+'''
+'''q1 Store following word meanings in a python dictionary :
+table : "a piece of furniture","list of facts & figures"
+cat:"a small animal"'''
+
+dictionary = {
+    "cat" : "a small animal",
+    "table" : ["a piece of furniture","list of facts & figures"]
+}
+print(dictionary)
+
+'''q2 You are given a list of subjects for students. Awesume one classroom is required for 1 subject.how many 
+classroom  are needed by all students. ["python","java","c++","python","javascript","java","python","java",
+"c++","c"] '''
+classroom = { 
+    "python","java","c++","python","javascript","java","python","java","c++","c" 
+    }
+print(len(classroom))
+
+'''q3 enter marks of 3 subjects from user and store them in a dictionary . Start with an empty dictionary
+ and add one by one .Use subject name as key & marks as value'''
+marks = {}
+x=int(input("enter the physics:"))
+marks.update({"phy" : x})
+y=int(input("enter the kannada:"))
+marks.update({"kannada" : y})
+z=int(input("enter the english"))
+marks.update({"english" : z})
+print(marks)
+
+'''q4 Figure out a way to store 9 & 9.0 as separate values in the set.
+(you can take help of built-in data type)''' 
+values = {9.2,9}
+print(values)
